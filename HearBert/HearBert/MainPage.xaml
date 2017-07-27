@@ -1,0 +1,93 @@
+﻿<Page x:Class="HearBert.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HearBert"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="640"
+      Title="MainPage">
+    <Grid>
+        <Grid Margin="10,10,10,10" VerticalAlignment="Top" Height="Auto" Width="auto" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="SelectedDrive" Grid.Column="0" Margin="0,0,10,0" IsReadOnly="True"/>
+            <Button HorizontalAlignment="Left" Click="SelectDrive_Click" Grid.Column="1" Margin="0,0,10,0" Content="Auswahl" Width="80"/>
+            <Button HorizontalAlignment="Left" Grid.Column="2" Click="RefreshDrive_Click" Margin="0,0,10,0" Content="Auffrischen" Width="80"/>
+            <Button HorizontalAlignment="Left" Grid.Column="3" Click="About_Click" Content="Über" Width="60"/>
+        </Grid>
+        <Grid Margin="0,40,0,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Button1" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="0" Background="#FF543B40" Click="Button1_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle1" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize1" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button2" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0" Background="#FFB91D21" Click="Button2_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle2" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize2" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button3" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="0" Background="#FF424267" Click="Button3_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle3" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize3" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button4" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Background="#FF899C3B" Click="Button4_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle4" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize4" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button5" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Background="#FFECA92A" Click="Button5_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle5" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize5" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button6" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="1" Background="#FF817B86" Click="Button6_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle6" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize6" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button7" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Background="#FF649ABC" Click="Button7_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle7" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize7" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button8" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="2" Background="#FFD84B07" Click="Button8_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle8" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize8" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Button9" HorizontalAlignment="Stretch" Margin="10,0,10,10" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="2" Background="#FF4C6F48" Click="Button9_Click">
+                <StackPanel>
+                    <TextBlock x:Name="FolderTitle9" Text="HearBert" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="FolderSize9" Text="by D-Soft" FontSize="16" FontWeight="Light" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid VerticalAlignment="Bottom" Margin="10,10,10,10">
+            <StatusBarItem x:Name="DriveInfo" Content="Kein Laufwerk ausgewählt" HorizontalAlignment="Right" Height="auto"/>
+        </Grid>
+    </Grid>
+</Page>

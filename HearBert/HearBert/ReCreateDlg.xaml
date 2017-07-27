@@ -1,0 +1,19 @@
+﻿<Window x:Class="HearBert.ReCreateDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HearBert"
+        mc:Ignorable="d"
+        Title="XML Info und Laufwerk sind inkonsistent" Height="170" Width="320" WindowStartupLocation="CenterOwner" Icon="d-soft_128.ico" ResizeMode="NoResize">
+  <Grid Margin="0,0,0,0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="22*"/>
+      <ColumnDefinition Width="135*"/>
+    </Grid.ColumnDefinitions>
+    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Was soll die Referenz sein?" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+    <Button Content="Laufwerk" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="120" Click="Drive_Click" IsDefault="True" Grid.ColumnSpan="2"/>
+    <Button Content="Alles neu anlegen" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="120" Click="AllNew_Click" Grid.ColumnSpan="2"/>
+    <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="120" IsCancel="True" Grid.ColumnSpan="2"/>
+  </Grid>
+</Window>

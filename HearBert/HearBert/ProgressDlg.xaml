@@ -1,0 +1,19 @@
+﻿<Window x:Class="HearBert.ProgressDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HearBert"
+        mc:Ignorable="d"
+        Title="Titel hinzufügen" Width="500" ResizeMode="NoResize" SizeToContent="Height" WindowStartupLocation="CenterOwner">
+  <Grid VerticalAlignment="Stretch">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="auto"/>
+    </Grid.RowDefinitions>
+    <TextBlock x:Name="FileInfo" Text="FileInfo" TextTrimming="CharacterEllipsis" Height="auto" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Top" Grid.Row="0"/>
+    <ProgressBar x:Name="FileProgress" Height="20" Margin="10, 10, 10, 10" VerticalAlignment="Center" Grid.Row="1"/>
+    <Button x:Name="AbortBtn" Content="Abbrechen" IsCancel="True" IsDefault="True" Width="100" Margin="10,10,10,10" VerticalAlignment="Bottom" Grid.Row="2" Click="Abort_Click"/>
+  </Grid>
+</Window>
